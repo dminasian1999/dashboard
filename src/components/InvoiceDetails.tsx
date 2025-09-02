@@ -45,7 +45,7 @@ const InvoiceDetails: React.FC<InvoiceProps> = ({
       <div className="col-xl-12">
         <div className="card">
           <div className="card-body">
-            {/* Header */}
+            {/* Drawer */}
             <div className="row gx-3">
               <div className="col-sm-3 col-12">
                 <img

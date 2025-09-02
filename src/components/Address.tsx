@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
-import { useAppDispatch, useAppSelector } from "../../app/hooks.ts"
-import { updateAddress } from "../../features/api/accountActions.ts"
-import { AddressT } from "../../utils/types.ts"
+import {useAppDispatch, useAppSelector} from "../app/hooks.ts";
+import {AddressT} from "../utils/types.ts";
+import {updateAddress} from "../features/api/accountActions.ts";
 
 const Address = () => {
   const dispatch = useAppDispatch()

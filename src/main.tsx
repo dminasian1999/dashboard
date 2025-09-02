@@ -4,6 +4,7 @@ import {Provider} from "react-redux";
 import {store} from "./app/store";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import {BrowserRouter} from "react-router-dom";
 
@@ -22,7 +23,9 @@ root.render(
     <StrictMode>
             <BrowserRouter>
                 <Provider store={store}>
+
                     <App />
+
                 </Provider>
             </BrowserRouter>
     </StrictMode>

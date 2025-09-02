@@ -1,16 +1,35 @@
 // ====== Imports ======
+import banner1 from "../images/slideshow-banners/banner1.jpg";
+import banner2 from "../images/slideshow-banners/banner2.jpg";
+import banner3 from "../images/slideshow-banners/banner3.jpg";
+import banner4 from "../images/slideshow-banners/banner4.jpg";
 
-// ====== Assets ======
+import logo from "../images/logo/logo.png";
 
-// ====== Navigation ======
+import bracelets from "../images/categories/bracelets.jpg";
+import ceramics from "../images/categories/ceramics.jpg";
+import earrings from "../images/categories/earrings.jpg";
+import hangings from "../images/categories/hangings.jpg";
+import jewelry from "../images/categories/jewelry.jpg";
+import keychains from "../images/categories/keychains.jpg";
+import magnets from "../images/categories/magnets.jpg";
+import mugs from "../images/categories/mugs.jpg";
+import necklaces from "../images/categories/necklaces.jpg";
+import pomegranates from "../images/categories/pomegranates.jpg";
+import plates from "../images/categories/plates.jpg";
+import religious from "../images/categories/religious.jpg";
+import rings from "../images/categories/rings.jpg";
+import souvenirs from "../images/categories/souvenirs.jpg";
+import tiles from "../images/categories/tiles.jpg";
+import vases from "../images/categories/vases.jpg";
 import type {NavItemT} from "./types.ts";
 
 export const navItems: NavItemT[] = [
-  { title: "Home", route: "home" },
-  { title: "Shop", route: "shop" },
-  { title: "Collections", route: "collections" },
-  { title: "About", route: "about" },
-  { title: "Contact", route: "contact" },
+  { title: "Home", route: "home" ,icon:"fa fa-home"},
+  { title: "Settings", route: "settings",icon:"fa  fa-cog" },
+
+  { title: "Products", route: "products",icon:"fa  fa-cubes" },
+  { title: "Orders", route: "orders",icon:'fa fa-phone' },
 ];
 
 // ====== Collections ======
@@ -32,6 +51,24 @@ export const adminInfo = {
   city: "Israel",
   email: "sevan@gmail.com",
 };
+export const collections = [
+  { title: "Tiles", route: "tiles", image: tiles },
+  { title: "Plates", route: "plates", image: plates },
+  { title: "Vases", route: "vases", image: vases },
+  { title: "Pomegranates", route: "pomegranates", image: pomegranates },
+  { title: "Mugs", route: "mugs", image: mugs },
+  { title: "Hangings", route: "hangings", image: hangings },
+  { title: "Souvenirs", route: "souvenirs", image: souvenirs },
+  { title: "Ceramics", route: "ceramics", image: ceramics },
+  { title: "Jewelry", route: "jewelry", image: jewelry },
+  { title: "Religious", route: "religious", image: religious },
+  { title: "Rings", route: "rings", image: rings },
+  { title: "Necklaces", route: "necklaces", image: necklaces },
+  { title: "Earrings", route: "earrings", image: earrings },
+  { title: "Bracelets", route: "bracelets", image: bracelets },
+  { title: "Keychains", route: "keychains", image: keychains },
+  { title: "Magnets", route: "magnets", image: magnets },
+];
 
 // ====== Defaults & Timers ======
 export const defaultPic = "";
@@ -119,4 +156,33 @@ export const sizeOptions = [
   { name: "L", value: "L" },
   { name: "XL", value: "XL" },
   { name: "Custom…", value: "custom" },
+];
+export  const exampleColors = [
+  { name: "Red", value: "red" },
+  { name: "Blue", value: "blue" },
+  { name: "Green", value: "green" },
+  { name: "Black", value: "black" },
+  { name: "White", value: "white" },
+  { name: "Yellow", value: "yellow" },
+  { name: "Orange", value: "orange" },
+  { name: "Purple", value: "purple" },
+  { name: "Brown", value: "brown" },
+  { name: "Gray", value: "gray" },
+  { name: "Beige", value: "beige" },
+  { name: "Pink", value: "pink" },
+  { name: "Gold", value: "gold" },
+  { name: "Silver", value: "silver" },
+  { name: "Ivory", value: "ivory" },
+  { name: "Cyan", value: "cyan" },
+  { name: "Teal", value: "teal" },
+  { name: "Olive", value: "olive" },
+  { name: "Maroon", value: "maroon" },
+  { name: "Navy", value: "navy" },
+  { name: "Turquoise", value: "turquoise" },
+  { name: "Coral", value: "coral" },
+  { name: "Lavender", value: "lavender" },
+  { name: "Mint", value: "mintcream" },
+  { name: "Charcoal", value: "#36454F" },
+  { name: "Sand", value: "#C2B280" },
+  { name: "Other", value: "other" },
 ];

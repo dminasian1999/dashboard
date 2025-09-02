@@ -1,6 +1,7 @@
 export interface NavItemT {
   title: string
   route: string
+  icon :string
   // subItems?: NavItemT[];
 }
 
@@ -21,6 +22,16 @@ export interface CollectionT {
 //   desc: string
 //   dateCreated?: Date
 // }
+/** Local type for a variant row in the editable table */
+export type VariantT = {
+  id: string;
+  size?: string;
+  color?: string;
+  material?: string;
+  quantity: number;
+  price: number;
+  sku?: string;
+};
 
 export interface ProductT {
   id?: string

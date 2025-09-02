@@ -1,8 +1,10 @@
-import "./App.css"
 import {ProductsContext} from "./utils/context.ts"
-import {useState} from "react";
+import  {useState} from "react";
 import type {ProductT, ReceiptT} from "./utils/types.ts";
-import Header from "./components/Header.tsx";
+import Drawer from "./components/Drawer.tsx";
+import Main from "./components/Main.tsx";
+import "./App.css"
+import Drawer1 from "./components/Drawer1.tsx";
 
 const App = () => {
 
@@ -10,7 +12,7 @@ const App = () => {
     const [receipts, setReceipts] = useState([] as ReceiptT[])
     const [language, setLanguage] = useState("English")
     return (
-        <div className="container-fluid row m-0 p-0">
+        <div className="container-fluid p-0">
             <ProductsContext.Provider
                 value={{
                     products,
@@ -21,8 +23,13 @@ const App = () => {
                     setLanguage,
                 }}
             >
-                <Header/>
-                {/*<QuickViewPopup />*/}
+
+                <Drawer/>
+                <Main/>
+
+
+                {/*<div className="row mt-5">*/}
+                {/*</div>*/}
 
             </ProductsContext.Provider>
         </div>

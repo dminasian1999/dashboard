@@ -1,9 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { ProductT } from "../../utils/types.ts";
-import { useAppSelector } from "../../app/hooks.ts";
-import { ProductsContext } from "../../utils/context.ts";
-import { allMaterials, baseUrlBlog, collections, sizeOptions } from "../../utils/constants.ts"
+import React, {useEffect, useState} from "react";
+import {useParams} from "react-router-dom";
+import {useAppSelector} from "../app/hooks.ts";
+import {ProductT} from "../utils/types.ts";
+import {allMaterials, baseUrlBlog, collections, sizeOptions} from "../utils/constants.ts";
 
 const exampleColors = [
   { name: "Red", value: "red" },
@@ -76,7 +75,7 @@ const EditProduct: React.FC = () => {
   }, [id, token]);
 
   // Handle input changes
-  const handleChange = (field: keyof ProductT) => (e: any) => {
+  const handleChange = (field: keyof ProductT) => (e) => {
     const value =
       e.target.type === "number"
         ? Number(e.target.value)

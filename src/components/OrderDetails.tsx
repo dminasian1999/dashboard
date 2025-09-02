@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { OrderT, ProductT } from "../../utils/types.ts";
-import { baseUrlBlog } from "../../utils/constants.ts";
-import { getPostById } from "../../features/api/postActions.tsx";
+import {useEffect, useState} from "react";
+import {OrderT, ProductT} from "../utils/types.ts";
+import {baseUrlBlog} from "../utils/constants.ts";
+import {getPostById} from "../features/api/postActions.tsx";
 
 const OrderDetails = () => {
   const { orderId } = useParams<{ orderId: string }>();
